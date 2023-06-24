@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+    <!-- Calculator Body -->
+<div class="calc-body">
+
+    <!-- Calculator Display Screen -->
+    <div class="calc-screen">
+        <p id ="result">000</p>
+        <!-- <div ="result">890</div> -->
+    </div>
+    <input type="text" id ="inp" placeholder="Enter Value..." readonly="">
+    
+    <!-- Calculator Buttons -->
+    <div class="calc-button-row">
+        <button  onclick="AT_add(0)">0</button>
+        <button onclick="AT_add(1)">1</button>
+        <button  onclick="AT_add(2)">2</button>
+        <button  onclick="AT_add(3)">3</button>
+        <button  onclick="AT_add(4)">4</button>
+        <button  onclick="AT_add(5)">5</button>
+        <button  onclick="AT_add(6)">6</button>
+        <button onclick="AT_add(7)">7</button>
+        <button  onclick="AT_add(8)">8</button>
+        <button  onclick="AT_add(9)">9</button>
+        <button onclick="AT_add('+')">+</button>
+        <button onclick="AT_add('-')">-</button>
+        <button onclick="AT_add('/')">/</button>
+        <button onclick="AT_add('*')">*</button>
+        <button onclick="percent()">%</button>
+        <button onclick="radical()">√</button>
+        
+
+    </div>
+    <div class="operators">
+        <button onclick="exe()">=</button>
+        <button onclick="cancel()">⌫</button>
+        <button onclick="cls()">c</button>
+    </div>
+    </div>
+    </div>
+    
+    <script src="index.js"></script>
+</body>
+</html>
